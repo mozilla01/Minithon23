@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-color: #14213d;
+  margin: 0;
+}
+#about {
+  padding: 0 15rem;
+  /* position: fixed;
+  top: 190px; */
+}
+#circuit {
+  width: 100vw;
+  max-height: 40vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Black Ops One", Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+}
+#about-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+}

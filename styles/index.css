@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #14213d;
+  color: white;
+}
+header {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem 5rem;
+  animation: fadeIn 3s;
+}
+#head-content {
+  grid-column: 1 / span 2;
+  grid-row: -3 / -1;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Black Ops One", Arial, Helvetica, sans-serif;
+  color: #14213d;
+  background-color: #14213d;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+#head-img {
+  opacity: 0.7;
+  height: clamp(50vh, 80vh, 80vh);
+  grid-column: -3 / -1;
+  grid-row: -3 / -1;
+}
+
+@media screen and (min-width: 1350px) {
+  header {
+    flex-direction: row;
+  }
+  #head-content {
+    font-size: 6rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
